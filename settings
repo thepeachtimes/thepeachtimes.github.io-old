@@ -5,7 +5,7 @@ tmpuuid=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 5`
 # paths config
 export INDEX="index.html"
 export RSS="rss.xml"
-export BLOGDIR='posts/'`date +%Y/%b`"/"
+export BLOGDIR='p/'`date +%Y/%b`"/"
 export DRAFTDIR=".drafts/"
 export TMPDIR="/tmp/bs/"$tmpuuid
 
