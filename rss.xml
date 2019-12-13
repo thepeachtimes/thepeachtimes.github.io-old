@@ -3,11 +3,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 	<channel>
-		<title>Blog</title>
-		<description>Its my blog</description>
+		<title>ThePeachTimes</title>
+		<description>TPT is a small news website about tech, cats, and computers</description>
 		<language>en-us</language>
-		<link>https://example.com</link>
-		<atom:link href="https://example.com" rel="self" type="application/rss+xml" />
+		<link>https://thepeachtimes.github.io</link>
+		<atom:link href="https://thepeachtimes.github.io" rel="self" type="application/rss+xml" />
 
 			<!-- bs insert -->
 
