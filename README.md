@@ -1,7 +1,7 @@
 # bs
 maybe a competitor to @lukesmithxyz's lb?
 
-actually probably not its bad lol
+actually probably not but still
 
 
 ## what is this
