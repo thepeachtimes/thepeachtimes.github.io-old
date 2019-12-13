@@ -1,6 +1,6 @@
 #!/bin/bash
 
 export INDEX="bindex.html"
-export BLOGDIR="posts/"
+export BLOGDIR='posts/'`date +%Y/%b`
 export DRAFTDIR=".drafts/"
 
