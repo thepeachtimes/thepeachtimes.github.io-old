@@ -43,12 +43,12 @@ echo "generating temporary files ("$tmpuuid")"
 cat templates/post_ex.html | sed -z "
 s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;
-s/<\!-- bs desc -->/$desc/g;
+s+<\!-- bs desc -->+$desc+g;
 s+<\!-- bs link -->+$permalink+g" > $TMPDIR/ex.html
 cat templates/rss_ex.xml | sed -z "
 s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;
-s/<\!-- bs desc -->/$desc/g;
+s+<\!-- bs desc -->+$desc+g;
 s+<\!-- bs link -->+$URL$permalink+g" > $TMPDIR/ex.xml
 
 echo "copying files to correct locations"
@@ -57,7 +57,7 @@ sed -i "/<\!-- bs insert -->/r $TMPDIR/ex.xml" $RSS
 cat templates/post.html | sed -z "
 s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;
-s/<\!-- bs content -->/$content/g;" > $permalink
+s+<\!-- bs content -->+$content+g;" > $permalink
 }
 
 cat <<EOF
