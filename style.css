@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari:100,400&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html, body {
+    font-family: 'Manjari', sans-serif;
+    width: 100%;
+}
+
+.tbar {
+    padding: 20px;
+    background-color: #eef;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.tbar h1 {
+    font-family: 'Manjari', sans-serif;
+    font-weight: 200;
+    color: #555;
+    float: right;
+}
+
+.tbar ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.tbar ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+.tbar ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+}
+
+.tbar ul li a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
