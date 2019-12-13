@@ -2,4 +2,35 @@
 
 source ./settings
 
-echo $SETTING1
+pickdrafts() {
+oldIFS=$IFS
+IFS=$' '
+choices=( `ls $DRAFTDIR` )
+IFS=$oldIFS
+PS3="Draft to post: "
+select answer in "${choices[@]}"; do
+  for item in "${choices[@]}"; do
+  if [[ $item == $answer ]]; then
+ break 2
+   fi
+  done
+  done
+  chosen=$answer
+  echo "$chosen"
+}
+
+cat <<EOF
+ _         
+| |__  ___ 
+| '_ \\/ __|
+| |_) \\__ \\
+|_.__/|___/
+LickTheCheese's Blog Script
+	   
+EOF
+echo "ecit a text file in "$DRAFTDIR" to make a new draft"
+echo "seperate words with hyphens ( - ) to make the title."
+echo
+echo "edit ./settings for some settings"
+echo
+
