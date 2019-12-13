@@ -11,6 +11,10 @@ html, body {
     overflow-wrap: break-word;
 }
 
+h1 {
+    font-weight: 400;
+}
+
 .wrapper {
     margin: 100px auto;
     width: 600px;
