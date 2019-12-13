@@ -19,6 +19,14 @@ select answer in "${choices[@]}"; do
   echo "$chosen"
 }
 
+postdraft() {
+echo "making sure "$BLOGDIR" exists..."
+mkdir -p $BLOGDIR
+echo "converting title to human readable..."
+htitle=`echo $drafttopost | sed 's/-/ /g'`
+echo $htitle
+}
+
 cat <<EOF
  _         
 | |__  ___ 
@@ -33,4 +41,6 @@ echo "seperate words with hyphens ( - ) to make the title."
 echo
 echo "edit ./settings for some settings"
 echo
+drafttopost=`pickdrafts`
+postdraft
 
