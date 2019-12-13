@@ -6,7 +6,9 @@ actually probably not its bad lol
 
 ## what is this
 this is a small lightweight static file bash blogging script, similar
-to bb (bash blog) or lb (@lukesmithxyz's blogging script)
+to bb (bash blog) or lb (@lukesmithxyz's blogging script), that mainly
+uses `sed` (lol idk how to use `awk` it would probably be better in this
+situation)
 
 you should probably use one of those, this one is bad lol, im just bored
 and dont want my contributings to be blank
