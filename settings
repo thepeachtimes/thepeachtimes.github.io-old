@@ -11,5 +11,5 @@ export TMPDIR="/tmp/bs/"$tmpuuid
 # metadata config
 export URLLEN=20
 export DSCLEN=200
-export PUBDATE=`date +%b %d, %Y`
+export PUBDATE=`date '+%b %d, %Y'`
 
