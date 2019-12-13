@@ -43,6 +43,8 @@ s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;
 s/<\!-- bs desc -->/$desc/g;
 s+<\!-- bs link -->+$permalink+g" > $TMPDIR/ex.html
+echo "copying files to correct locations"
+sed -i "/<\!-- bs insert -->/r $TMPDIR/ex.html" $INDEX
 }
 
 cat <<EOF
