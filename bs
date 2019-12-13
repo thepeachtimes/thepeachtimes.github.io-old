@@ -35,8 +35,9 @@ echo "title is '"$htitle"'. press CTRL+c NOW if it is wrong"
 echo "you have 1 second before it moves on to perminent changes"
 sleep 1
 echo "generating metadata"
-permalink=$BLOGDIR`echo $drafttopost | head -c $URLLEN`
+permalink=$BLOGDIR`echo $drafttopost | head -c $URLLEN`".html"
 desc=`cat $DRAFTDIR$drafttopost | head -c $DSCLEN`
+content=`cat $DRAFTDIR$drafttopost`
 echo "generating temporary files ("$tmpuuid")"
 cat templates/post_ex.html | sed -z "
 s/<\!-- bs title -->/$htitle/g;
@@ -45,6 +46,10 @@ s/<\!-- bs desc -->/$desc/g;
 s+<\!-- bs link -->+$permalink+g" > $TMPDIR/ex.html
 echo "copying files to correct locations"
 sed -i "/<\!-- bs insert -->/r $TMPDIR/ex.html" $INDEX
+cat templates/post.html | sed -z "
+s/<\!-- bs title -->/$htitle/g;
+s/<\!-- bs date -->/$PUBDATE/g;
+s/<\!-- bs content -->/$content/g;" > $permalink
 }
 
 cat <<EOF
