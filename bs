@@ -19,6 +19,11 @@ select answer in "${choices[@]}"; do
   echo "$chosen"
 }
 
+hidedraft() {
+mv $DRAFTDIR$drafttopost $DRAFTDIR.$drafttopost
+echo "note: the draft file has been hidden, it is still in the drafts folder"
+}
+
 postdraft() {
 echo "making sure '"$BLOGDIR"' and other nessesary directories exist..."
 mkdir -p $TMPDIR
@@ -51,4 +56,4 @@ echo "edit ./settings for some settings"
 echo
 drafttopost=`pickdrafts`
 postdraft
-
+hidedraft
