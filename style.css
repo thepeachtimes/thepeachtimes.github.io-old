@@ -61,9 +61,17 @@ html, body {
     margin-bottom: 20px;
 }
 
-.rimg {
+.postex .rimg {
+    width: 100%;
+}
+
+.post .rimg {
+    width: 200px;
     float: right;
 }
+
+
+
 
 
 
