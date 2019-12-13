@@ -4,8 +4,8 @@ source ./settings
 
 pickdrafts() {
 oldIFS=$IFS
-IFS=$' '
-choices=( `ls $DRAFTDIR` )
+IFS=$'\n'
+choices=( `ls $DRAFTDIR | tr " " "\n"` )
 IFS=$oldIFS
 PS3="Draft to post: "
 select answer in "${choices[@]}"; do
