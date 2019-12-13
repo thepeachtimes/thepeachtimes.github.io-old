@@ -3,7 +3,7 @@
 tmpuuid=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 5`
 
 # paths config
-export INDEX="bindex.html"
+export INDEX="index.html"
 export RSS="rss.xml"
 export BLOGDIR='posts/'`date +%Y/%b`"/"
 export DRAFTDIR=".drafts/"
@@ -13,6 +13,6 @@ export TMPDIR="/tmp/bs/"$tmpuuid
 export URLLEN=20
 export DSCLEN=200
 export PUBDATE=`date '+%b %d, %Y'`
-export URL="https://example.com/"
+export URL="https://thepeachtimes.github.io/"
 
 
