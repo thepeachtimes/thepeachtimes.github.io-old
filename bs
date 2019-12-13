@@ -37,8 +37,12 @@ sleep 1
 echo "generating metadata"
 permalink=$BLOGDIR`echo $drafttopost | head -c $URLLEN`
 desc=`cat $DRAFTDIR$drafttopost | head -c $DSCLEN`
-echo "generating temporary files"
-
+echo "generating temporary files ("$tmpuuid")"
+cat templates/post_ex.html | sed -z "
+s/<\!-- bs title -->/$htitle/g;
+s/<\!-- bs date -->/$PUBDATE/g;
+s/<\!-- bs desc -->/$desc/g;
+s+<\!-- bs link -->+$permalink+g" > $TMPDIR/ex.html
 }
 
 cat <<EOF
