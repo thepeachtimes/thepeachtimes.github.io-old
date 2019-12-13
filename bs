@@ -17,6 +17,7 @@ select answer in "${choices[@]}"; do
   done
   chosen=$answer
   echo "$chosen"
+  if [[ -z "$chosen" ]]; then echo "Put a draft in "$DRAFTDIR" to use bs.">&2; kill $$; fi
 }
 
 hidedraft() {
