@@ -11,7 +11,7 @@ export TMPDIR="/tmp/bs/"$tmpuuid
 
 # metadata config
 export URLLEN=20
-export DSCLEN=200
+export DSCLEN=400
 export PUBDATE=`date '+%b %d, %Y'`
 export URL="https://thepeachtimes.github.io/"
 
