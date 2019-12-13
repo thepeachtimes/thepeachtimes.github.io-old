@@ -1,6 +1,14 @@
 #!/bin/bash
 
+tmpuuid=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 5`
+
+# paths config
 export INDEX="bindex.html"
 export BLOGDIR='posts/'`date +%Y/%b`
 export DRAFTDIR=".drafts/"
+export TMPDIR="/tmp/bs/"$tmpuuid
+
+# metadata config
+export URLLEN=20
+export DSCLEN=200
 

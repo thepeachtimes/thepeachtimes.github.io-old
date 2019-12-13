@@ -20,13 +20,18 @@ select answer in "${choices[@]}"; do
 }
 
 postdraft() {
-echo "making sure '"$BLOGDIR"' exists..."
+echo "making sure '"$BLOGDIR"' and other nessesary directories exist..."
+mkdir -p $TMPDIR
 mkdir -p $BLOGDIR
 echo "converting title to human readable..."
 htitle=`echo $drafttopost | sed 's/-/ /g'`
 echo "title is '"$htitle"'. press CTRL+c NOW if it is wrong"
 echo "you have 1 second before it moves on to perminent changes"
 sleep 1
+echo "generating metadata"
+permalink=$BLOGDIR`echo $drafttopost | head -c $URLLEN`
+desc=`cat $DRAFTDIR$drafttopost | head -c $DSCLEN`
+echo "generating temporary files"
 
 }
 
