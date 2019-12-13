@@ -11,7 +11,7 @@ uses `sed` (lol idk how to use `awk` it would probably be better in this
 situation)
 
 you should probably use one of those, this one is bad lol, im just bored
-and dont want my contributings to be blank
+and dont want my contributings on GitHub to be blank
 
 **note**: `bs` is **only** a script for posting to a blog website, and
 will not be able to edit/delete posts unless you do it manually. if you
