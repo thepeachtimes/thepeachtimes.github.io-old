@@ -15,6 +15,9 @@ and dont want my contributings to be blank
 will not be able to edit/delete posts unless you do it manually. if you
 would like those features, please use `lb` or `bashblog` instead.
 
+**warning**: user input is supposed to be trusted, and is not sanitized. dont
+connect some user interface to `bs` and expect it to be secure
+
 ## how to use it
 edit stuff in `./settings` and then put a text file, with the name being the
 title seperated with hyphens, into `./.drafts/` (or whatever you set it in
