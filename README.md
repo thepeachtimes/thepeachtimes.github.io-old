@@ -26,3 +26,11 @@ title seperated with hyphens, into `./.drafts/` (or whatever you set it in
 the settings file). then just run bs in a terminal and select what to post,
 and it should post it
 
+## intresting/weird things it does
+there are some strange things it does that you would not expect
+* it leaves temporary files in `/tmp/bs/` for every session, you might want
+to clear that out after a while
+* published drafts are hidden in the drafts folder, you might want
+to also clear that out after a LONG time (like after a few years delete the
+oldest half of published drafts or something)
+

@@ -55,6 +55,9 @@ echo "seperate words with hyphens ( - ) to make the title."
 echo
 echo "edit ./settings for some settings"
 echo
+echo "Pick a draft to post or press CTRL+c"
 drafttopost=`pickdrafts`
 postdraft
 hidedraft
+
+
