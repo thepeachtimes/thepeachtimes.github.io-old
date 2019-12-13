@@ -38,14 +38,22 @@ echo "generating metadata"
 permalink=$BLOGDIR`echo $drafttopost | head -c $URLLEN`".html"
 desc=`cat $DRAFTDIR$drafttopost | head -c $DSCLEN`
 content=`cat $DRAFTDIR$drafttopost`
+
 echo "generating temporary files ("$tmpuuid")"
 cat templates/post_ex.html | sed -z "
 s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;
 s/<\!-- bs desc -->/$desc/g;
 s+<\!-- bs link -->+$permalink+g" > $TMPDIR/ex.html
+cat templates/rss_ex.xml | sed -z "
+s/<\!-- bs title -->/$htitle/g;
+s/<\!-- bs date -->/$PUBDATE/g;
+s/<\!-- bs desc -->/$desc/g;
+s+<\!-- bs link -->+$URL$permalink+g" > $TMPDIR/ex.xml
+
 echo "copying files to correct locations"
 sed -i "/<\!-- bs insert -->/r $TMPDIR/ex.html" $INDEX
+sed -i "/<\!-- bs insert -->/r $TMPDIR/ex.xml" $RSS
 cat templates/post.html | sed -z "
 s/<\!-- bs title -->/$htitle/g;
 s/<\!-- bs date -->/$PUBDATE/g;

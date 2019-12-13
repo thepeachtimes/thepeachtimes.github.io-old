@@ -1,0 +1,11 @@
+
+<item>
+	<title><!-- bs title --></title>
+	<pubDate><!-- bs date --></pubDate>
+	<description><![CDATA[
+<!-- bs desc -->
+]]>
+	</description>
+	<guid>"<!-- bs link -->"</guid>
+</item>
+
