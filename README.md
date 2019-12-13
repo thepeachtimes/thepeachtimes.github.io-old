@@ -1,8 +1,5 @@
 # bs
-maybe a competitor to @lukesmithxyz's lb?
-
-actually probably not but still
-
+bull sh\*t free blogging script
 
 ## what is this
 this is a small lightweight static file bash blogging script, similar
