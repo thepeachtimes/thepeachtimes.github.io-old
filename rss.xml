@@ -12,6 +12,17 @@
 			<!-- bs insert -->
 
 <item>
+	<title>what is tracery</title>
+	<pubDate>Jan 22, 2020</pubDate>
+	<description><![CDATA[
+<img src="/img/tracery.png" class="rimg"><br> Tracery is a library that can generate sentances and other things. It reads<br> from a JSON file with a sentance structure inside it, then it can generate<br> anything you want! here are some intresting things generated with it:<br> <pre><br> i like to eat pepper jack cheese because it is thoughtless<br> my name is Landon and my favorite distribution i
+]]>
+	</description>
+	<guid>"https://thepeachtimes.github.io/p/2020/Jan/what-is-tracery.html"</guid>
+</item>
+
+
+<item>
 	<title>happy new year</title>
 	<pubDate>Jan 02, 2020</pubDate>
 	<description><![CDATA[
