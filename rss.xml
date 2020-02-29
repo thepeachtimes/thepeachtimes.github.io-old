@@ -12,6 +12,17 @@
 			<!-- bs insert -->
 
 <item>
+	<title>wireguard: a new type of vpn</title>
+	<pubDate>Feb 29, 2020</pubDate>
+	<description><![CDATA[
+<img src="https://www.wireguard.com/img/wg-tool.png" class="rimg"><br> If you keep up-to-date with the Linux mailinglist, you might have heard that Wireguard is going to be included in the Linux Kernel some time soon. But what is wireguard?<br> <br> Wireguard is a new type of vpn protocol that works on the kernel level. Traditional vpn protocols like OpenVPN are out of date and inefficent, but sin
+]]>
+	</description>
+	<guid>"https://thepeachtimes.github.io/p/2020/Feb/wireguard:-a-new-typ.html"</guid>
+</item>
+
+
+<item>
 	<title>code.org: a good concept, but not good enough</title>
 	<pubDate>Feb 07, 2020</pubDate>
 	<description><![CDATA[
