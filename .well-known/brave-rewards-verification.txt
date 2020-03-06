@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: thepeachtimes.js.org
+Token: 984329928434e813d05a3059b4dbc93d2771eb94db0b8306ccb72175b2770c09
